@@ -26,6 +26,8 @@ Often enough, the settings are complex (perhaps `map[string][]int`), and
 writing cartesian product by hand results in fairly large amount of boiler plate.
 While writing verbose code is not a bad thing in Go, I believe that writing
 the boiler plat for the sake of boilerplate is a *bad* thing.
+Usually, at this point, you would abandon table driven tests, and switch to
+using nested for loops.
 
 Enter this library.  It allows you to generate test cases easily:
   * Define a struct representing your test case
