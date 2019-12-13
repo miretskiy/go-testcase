@@ -44,7 +44,7 @@ func Test(t *testing.T) {
     enable bool  `tc:"[true, false]"`
     i      int   `tc:"[3, 2, 1]"`
     arr    []int `tc:"[[1,2,3], [9,8,7]]"`
-  }
+  }{}
   for gen := GenerateTestCases(t, &tc); gen.Next(); {
     // Execute test case tc: all values will be initialized
   }
